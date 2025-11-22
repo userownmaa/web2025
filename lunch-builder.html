@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать ланч — ProLunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>ProLunch</h1>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="lunch-builder.html" class="active">Собрать ланч</a>
+                <a href="#">Доставка</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="builder">
+            <div class="container">
+                <h2>Соберите свой идеальный ланч</h2>
+                <p class="subtitle">Выберите по одному блюду из каждой категории</p>
+
+                <div class="dishes-category">
+                    <h3>Первое блюдо</h3>
+                    <div class="dishes-grid">
+
+                        <div class="dish-card">
+                            <img src="img/mushroom_soup.jpg" alt="Крем-суп из шампиньонов">
+                            <div class="dish-info">
+                                <h4>Крем-суп из шампиньонов</h4>
+                                <p>Грибной крем-суп, гренки, зелень</p>
+                                <span class="weight">350 мл</span>
+                                <span class="price">350 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/tomyum.jpg" alt="Том Ям с тигровыми креветками">
+                            <div class="dish-info">
+                                <h4>Том Ям с тигровыми креветками</h4>
+                                <p>Кокосовое молоко, креветки, грибы, лемонграсс, лайм</p>
+                                <span class="weight">300 мл</span>
+                                <span class="price">690 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/borsch.jpg" alt="Борщ">
+                            <div class="dish-info">
+                                <h4>Борщ</h4>
+                                <p>Говядина, свекла, капуста, сметана</p>
+                                <span class="weight">280 мл</span>
+                                <span class="price">280 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/solyanka.jpg" alt="Солянка мясная сборная">
+                            <div class="dish-info">
+                                <h4>Солянка мясная сборная</h4>
+                                <p>Вареная колбаса, копчености, огурцы, маслины, сметана</p>
+                                <span class="weight">300 мл</span>
+                                <span class="price">390 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/meatballs_soup.jpg" alt="Суп с фрикадельками и лапшой">
+                            <div class="dish-info">
+                                <h4>Суп с фрикадельками и лапшой</h4>
+                                <p>Куриные фрикадельки, овощи, яичная лапша</p>
+                                <span class="weight">250 мл</span>
+                                <span class="price">340 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/gazpacho.jpg" alt="Гаспачо">
+                            <div class="dish-info">
+                                <h4>Гаспачо</h4>
+                                <p>Охлажденный томатный суп, перец, огурец, сухарики</p>
+                                <span class="weight">400 мл</span>
+                                <span class="price">430 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="dishes-category">
+                    <h3>Основное блюдо</h3>
+                    <div class="dishes-grid">
+                        
+                        <div class="dish-card">
+                            <img src="img/chicken.jpg" alt="Курица терияки с рисом">
+                            <div class="dish-info">
+                                <h4>Курица терияки с рисом</h4>
+                                <p>Куриное филе в соусе терияки, рис, овощи</p>
+                                <span class="weight">380 г</span>
+                                <span class="price">420 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/steak.jpg" alt="Стейк с картофелем">
+                            <div class="dish-info">
+                                <h4>Стейк с картофелем</h4>
+                                <p>Говяжий стейк медиум, картофель запеченый</p>
+                                <span class="weight">350 г</span>
+                                <span class="price">750 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/carbonara.jpg" alt="Паста карбонара">
+                            <div class="dish-info">
+                                <h4>Паста карбонара</h4>
+                                <p>Спагетти, бекон, сливочный соус, пармезан</p>
+                                <span class="weight">250 г</span>
+                                <span class="price">490 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/fish.jpg" alt="Лосось с овощами">
+                            <div class="dish-info">
+                                <h4>Лосось с овощами</h4>
+                                <p>Запечённый лосось, брокколи, морковь</p>
+                                <span class="weight">290 г</span>
+                                <span class="price">690 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/duck.jpg" alt="Лосось с овощами">
+                            <div class="dish-info">
+                                <h4>Утка с яблочным чатни и пюре</h4>
+                                <p>Утиная ножка, яблочное чатни, картофельное пюре</p>
+                                <span class="weight">280 г</span>
+                                <span class="price">880 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/burger.jpg" alt="Лосось с овощами">
+                            <div class="dish-info">
+                                <h4>Бургер «Чеддер»</h4>
+                                <p>Говяжья котлета, сыр Чеддер, бекон, соус барбекю, картофель фри</p>
+                                <span class="weight">400 г</span>
+                                <span class="price">560 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="dishes-category">
+                    <h3>Напиток</h3>
+                    <div class="dishes-grid">
+
+                        <div class="dish-card">
+                            <img src="img/berry.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Морс ягодный 0.5 л</h4>
+                                <p>Домашний морс из свежих ягод</p>
+                                <span class="price">150 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/mojito.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Мохито безалкогольный 0.4 л</h4>
+                                <p>Содовая, лайм, свежая мята, сахарный сироп</p>
+                                <span class="price">320 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/cappuccino.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Капучино 0.3 л</h4>
+                                <p>Эспрессо, вспененное молоко, корица по желанию</p>
+                                <span class="price">280 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/latte.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Латте с сиропом 0.4 л</h4>
+                                <p>Эспрессо, молоко, сироп кленовый</p>
+                                <span class="price">330 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/orangejuice.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Апельсиновый сок 0.5 л</h4>
+                                <p>Апельсины свежего отжима</p>
+                                <span class="price">220 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="img/ginger.jpg" alt="Морс ягодный">
+                            <div class="dish-info">
+                                <h4>Лимонад имбирный 0.5 л</h4>
+                                <p>Домашний лимонад, свежий имбирь, мята</p>
+                                <span class="price">290 ₽</span>
+                            </div>
+                            <button class="btn-add">Добавить</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ФОРМА ЗАКАЗА — основная часть лабораторной №3 -->
+    <section class="order-form-section">
+        <div class="container">
+            <h2 class="order-title">Сделать заказ</h2>
+
+            <!-- Форма отправляется POST-запросом на https://httpbin.org/post -->
+            <form id="orderForm" action="https://httpbin.org/post" method="POST" novalidate>
+
+                <div class="form-grid">
+
+                    <!-- ЛЕВАЯ КОЛОНКА: ВАШ ЗАКАЗ -->
+                    <div class="form-block">
+                        <h3 class="block-title">Ваш заказ</h3>
+
+                        <!-- SELECT ДЛЯ СУПА с пустой опцией по умолчанию -->
+                        <div class="form-group">
+                            <label for="soup">Первое блюдо <span class="required">*</span></label>
+                            <select id="soup" name="soup" required>
+                                <option value="" disabled selected>Выберите суп</option>
+                                <!-- Все option имеют value — чтобы на httpbin пришло понятное значение -->
+                                <option value="mushroom_soup">Крем-суп из шампиньонов</option>
+                                <option value="tomyum">Том Ям с тигровыми креветками</option>
+                                <option value="borsch">Борщ</option>
+                                <option value="solyanka">Солянка мясная сборная</option>
+                                <option value="meatballs_soup">Суп с фрикадельками и лапшой</option>
+                                <option value="gazpacho">Гаспачо</option>
+                            </select>
+                        </div>
+
+                        <!-- SELECT ДЛЯ ОСНОВНОГО БЛЮДА -->
+                        <div class="form-group">
+                            <label for="main">Основное блюдо <span class="required">*</span></label>
+                            <select id="main" name="main" required>
+                                <option value="" disabled selected>Выберите основное блюдо</option>
+                                <option value="chicken_teriyaki">Курица терияки с рисом</option>
+                                <option value="steak">Стейк с картофелем</option>
+                                <option value="carbonara">Паста карбонара</option>
+                                <option value="salmon">Лосось с овощами</option>
+                                <option value="duck">Утка с яблочным чатни и пюре</option>
+                                <option value="burger">Бургер «Чеддер»</option>
+                            </select>
+                        </div>
+
+                        <!-- SELECT ДЛЯ НАПИТКА -->
+                        <div class="form-group">
+                            <label for="drink">Напиток <span class="required">*</span></label>
+                            <select id="drink" name="drink" required>
+                                <option value="" disabled selected>Выберите напиток</option>
+                                <option value="berry_mors">Морс ягодный 0.5 л</option>
+                                <option value="mojito">Мохито безалкогольный 0.4 л</option>
+                                <option value="cappuccino">Капучино 0.3 л</option>
+                                <option value="latte">Латте с сиропом 0.4 л</option>
+                                <option value="orange_juice">Апельсиновый сок 0.5 л</option>
+                                <option value="ginger_lemonade">Лимонад имбирный 0.5 л</option>
+                            </select>
+                        </div>
+
+                        <!-- КОММЕНТАРИЙ -->
+                        <div class="form-group">
+                            <label for="comment">Комментарий к заказу</label>
+                            <textarea id="comment" name="comment" rows="4" placeholder="Например: без лука, побольше соуса..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- ПРАВАЯ КОЛОНКА: ВАШИ ДАННЫЕ -->
+                    <div class="form-block">
+                        <h3 class="block-title">Ваши данные</h3>
+
+                        <!-- ИМЯ, EMAIL, ТЕЛЕФОН, АДРЕС — обязательные (required) -->
+                        <div class="form-group">
+                            <label for="name">Имя <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                        </div>
+
+                        <!-- ЧЕКБОКС ПОДПИСКИ — по умолчанию отмечен (checked) -->
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe" checked>
+                            <label for="subscribe">Хочу получать акции и специальные предложения</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+
+                        <!-- АДРЕС + пояснение курсивом -->
+                        <div class="form-group">
+                            <label for="address">Адрес доставки <span class="required">*</span></label>
+                            <input type="text" id="address" name="address" required placeholder="г. Москва, ул. Ленина, д. 10, кв. 25">
+                            <p class="form-hint">Доставка осуществляется только по Москве</p>
+                        </div>
+
+                        <!-- РАДИОКНОПКИ: время доставки — обязательно (required) -->
+                        <div class="form-group">
+                            <label>Время доставки <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="delivery_time" value="asap" required>
+                                    <span>Как можно скорее</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="delivery_time" value="scheduled" required>
+                                    <span>К определённому времени</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery_time_input">Укажите время</label>
+                            <input type="time" id="delivery_time_input" name="delivery_time_input" min="07:00" max="23:00" step="300">
+                            <p class="form-hint">Доступное время доставки с 7:00 до 23:00</p>
+                        </div>
+
+                        <!-- КНОПКИ: сброс и отправка -->
+                        <div class="form-buttons">
+                            <button type="reset" class="btn-reset">Очистить форму</button>
+                            <button type="submit" class="btn-submit">Отправить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <p>© 2025 ProLunch — быстрая доставка бизнес-ланчей в Москве</p>
+            <p>Тел: <a href="tel:+74951234567">+7 (495) 123-45-67</a> | WhatsApp: <a href="https://wa.me/79991234567">+7 (999) 123-45-67</a></p>
+            <p>Email: <a href="mailto:info@prolunch.ru">info@prolunch.ru</a></p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 10, офис 305</p>
+        </div>
+    </footer>
+
+</body>
+</html>
