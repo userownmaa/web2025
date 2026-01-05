@@ -1,0 +1,62 @@
+#about img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+#about p {
+    font-size: 1.3rem;
+}
+
+#advantages ul {
+    list-style: none;
+    max-width: 900px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    
+}
+
+#advantages li {
+    padding: 18px 0 18px 55px;
+    position: relative;
+    border-bottom: 1px dashed #eee;
+}
+
+#advantages li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 36px;
+    height: 36px;
+    background: tomato;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+table thead { background: tomato; color: #fff; }
+table th, table td { padding: 16px; text-align: left; }
+table tbody tr:hover { background: #fff3e6; }
+
+@media (max-width: 800px) { #advantages ul { columns: 1; } }

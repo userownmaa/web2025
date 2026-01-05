@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProLunch — История заказов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/orders-history.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ProLunch</h1>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="menu.html">Собрать ланч</a>
+                <a href="order.html">Оформить заказ</a>
+                <a href="orders-history.html" id="active">Заказы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="orders-section">
+            <h2>История заказов</h2>
+            <div id="orders-container">
+                <p class="loading-message">Загрузка заказов...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="container">
+            <p>© 2025 ProLunch — доставка бизнес-ланчей в Москве</p>
+            <p>Тел: <a href="tel:+74951234567">+7 (495) 123-45-67</a> | WhatsApp: <a href="https://wa.me/79991234567">+7 (999) 123-45-67</a></p>
+            <p>Email: <a href="mailto:info@prolunch.ru">info@prolunch.ru</a></p>
+            <p>Адрес: г. Москва, ул. Примерная, д. 10, офис 305</p>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay"></div>
+    <div id="view-modal" class="modal"></div>
+    <div id="edit-modal" class="modal"></div>
+    <div id="delete-modal" class="modal"></div>
+    <div id="notification" class="notification-popup"></div>
+
+    <script src="js/dishes.js"></script>
+    <script src="js/orders-history.js"></script>
+</body>
+</html>
